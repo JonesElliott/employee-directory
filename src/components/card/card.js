@@ -4,6 +4,7 @@ import './card.css';
 function Card() {
     return (
         <div className="card">
+            <img src="./assets/img/avatar-male-1.png" className="avatar"/>
             <div className="container">
                 <p>Name:</p>
                 <p>Position:</p>

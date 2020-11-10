@@ -13,12 +13,18 @@ function App() {
         <p className="App-link">
           Employee management at the tip of your finger
         </p>
-      </header>
-      <div>
         <Buttons />
-      </div>
+      </header>
       <div className="test">
         <section className="CardSection">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
           <Card />
         </section>
       </div>

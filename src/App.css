@@ -42,13 +42,10 @@ body {
   }
 }
 
-.test {
-  
-}
-
 .CardSection {
+  justify-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
+  column-gap: 0px;
   row-gap: 1em;
 }
