@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Card from '../src/components/card/card'
+import Buttons from '../src/components/buttons/buttons'
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         </p>
       </header>
       <section className="CardSection">
+        <Buttons />
         <Card />
       </section>
     </div>
