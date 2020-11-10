@@ -23,9 +23,6 @@ function App() {
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
-          <Card />
         </section>
       </div>
     </div>
