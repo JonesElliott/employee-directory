@@ -14,10 +14,14 @@ function App() {
           Employee management at the tip of your finger
         </p>
       </header>
-      <section className="CardSection">
+      <div>
         <Buttons />
-        <Card />
-      </section>
+      </div>
+      <div className="test">
+        <section className="CardSection">
+          <Card />
+        </section>
+      </div>
     </div>
   );
 }

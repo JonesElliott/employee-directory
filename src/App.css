@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+  /* background-color: #282c34; */
 }
 
 .App {
@@ -40,4 +40,15 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.test {
+  
+}
+
+.CardSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
 }
