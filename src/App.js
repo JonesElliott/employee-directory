@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import Card from '../src/components/card/card'
-import Buttons from '../src/components/buttons/buttons'
+import Card from '../src/components/card/card';
+import Buttons from '../src/components/buttons/buttons';
+import Modal from '../src/components/modal/modal';
 import './App.css';
 
 function App() {
@@ -11,12 +12,15 @@ function App() {
           React Employee Directory
         </p>
         <p className="App-link">
-          Employee management at the tip of your finger
+          Employee management at your finger tips
         </p>
         <Buttons />
       </header>
+      <Modal />
       <div className="test">
         <section className="CardSection">
+          <Card />
+          <Card />
           <Card />
           <Card />
           <Card />
