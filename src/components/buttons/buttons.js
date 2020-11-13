@@ -11,10 +11,8 @@ function Buttons() {
                 <option>Last Name</option>
                 <option>Position</option>
                 <option>Department</option>
-                <option>Start Date</option>
-                <option>Birth Date</option>
-                <option>Supervisor</option>
-                <option>Favorite Linux Distro</option>
+                <option>Hourly</option>
+                <option>Salary</option>
             </select>
         </div>
     );

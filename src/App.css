@@ -42,10 +42,8 @@ body {
   }
 }
 
-.CardSection {
-  justify-items: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 0px;
-  row-gap: 1em;
+.test {
+  margin: auto;
+  width: 50%;
+  /* justify-items: center; */
 }

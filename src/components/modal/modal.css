@@ -1,3 +1,7 @@
+#new-employee-form {
+    display: none;
+}
+
 input[type="radio"] {
     margin-right: 12px;
 }

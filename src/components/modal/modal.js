@@ -34,9 +34,9 @@ function Modal() {
 
                 <div className="radio-buttons">
                     <input className="radio-items" id="hourly" type="radio" name="paytype" value="hourly"></input>
-                    <label className="radio-items" for="hourly" id="hourly-label">Hourly</label>
+                    <label className="radio-items" htmlFor="hourly" id="hourly-label">Hourly</label>
                     <input className="radio-items" id="salary" type="radio" name="paytype" value="salary"></input>
-                    <label className="radio-items" for="salary" id="salary">Salary</label>
+                    <label className="radio-items" htmlFor="salary" id="salary">Salary</label>
                 </div>
             </form>
         </div>
