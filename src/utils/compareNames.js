@@ -11,3 +11,4 @@ function compareNames(direction = 1) {
         return result * direction;
     }
 }
+export default compareNames;
