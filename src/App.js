@@ -22,12 +22,12 @@ class EmployeeResults extends Component {
     .catch(err => console.log(err));
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
 
     this.retrieveEmployeeData();
 
     let filteredRecords = this.state.results;
-    if (this.filterState !== '') {
+    if (this.state.filterState !== '') {
       filteredRecords = this.state.results.filter(employeeRecord => {
         return employeeRecord.name.first.startsWith(this.state.filterState)
         || employeeRecord.name.last.startsWith(this.state.filterState);
@@ -38,14 +38,14 @@ class EmployeeResults extends Component {
 
     const filteredEmployeesCopy = this.state.results;
     filteredEmployeesCopy.sort(compareNames(this.state.sortDirection));
-    this.setState({ soretedEmployees: filteredEmployeesCopy });
+    this.setState({ sortedEmployees: filteredEmployeesCopy });
   }
-
+  
   onFilterChange = (event) => {
-    console.log('Change!');
     const { value } = event.target;
-    this.setState({ filterState: value });
-    console.log(this.state.filterState);
+    this.setState({
+      filterState: value
+    });
   }
 
   toggleSortDirection = (event) => {
@@ -68,7 +68,10 @@ class EmployeeResults extends Component {
           <p className="App-link">
             Employee management at your finger tips
           </p>
-          <NameFilterInput filterState={this.state.filterState} onFilterChange={this.onFilterChange}></NameFilterInput>
+          <NameFilterInput
+            filterState={this.state.filterState}
+            onFilterChange={this.onFilterChange}
+          />
         </header>
         <div className="test">
           <section className="TableSection">

@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import TableHead from './tablehead';
+import React from 'react';
 import TableBody from './tablebody';
-import compareNames from '../../utils/compareNames';
 import './table.css';
 
 function Table(props) {
