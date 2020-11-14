@@ -2,7 +2,7 @@ import React from "react";
 function NameFilterInput(props) {
     return (
         <div>
-            <label htmlFor="filter-input">Filter List By Name </label>
+            <label htmlFor="filter-input">Filter By Name: </label>
             <input 
             type="text"
             value={props.filterState}

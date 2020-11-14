@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import TableBody from '../src/components/table/tablebody';
-import Buttons from '../src/components/buttons/buttons';
 import API from "./utils/Api";
 import compareNames from './utils/compareNames';
+import NameFilterInput from './utils/nameFilterInput';
 import './App.css';
 
 class EmployeeResults extends Component {
@@ -41,15 +41,21 @@ class EmployeeResults extends Component {
     this.setState({ soretedEmployees: filteredEmployeesCopy });
   }
 
-  onFilterChange(event) {
-      const { value } = event.target;
-      this.setState({ filterState: value });
+  onFilterChange = (event) => {
+    console.log('Change!');
+    const { value } = event.target;
+    this.setState({ filterState: value });
+    console.log(this.state.filterState);
   }
 
-  toggleSortDirection(event) {
+  toggleSortDirection = (event) => {
       event.preventDefault();
       event.stopPropagation();
-      this.state.setState({ sortDirection: -1 * this.state.sortDirection });
+      const filteredEmployeesCopy = this.state.results;
+      filteredEmployeesCopy.sort(compareNames(this.state.sortDirection));
+      this.setState({
+        sortDirection: -1 * this.state.sortDirection
+      });
   }
 
   render() {
@@ -62,6 +68,7 @@ class EmployeeResults extends Component {
           <p className="App-link">
             Employee management at your finger tips
           </p>
+          <NameFilterInput filterState={this.state.filterState} onFilterChange={this.onFilterChange}></NameFilterInput>
         </header>
         <div className="test">
           <section className="TableSection">
