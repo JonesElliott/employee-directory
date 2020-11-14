@@ -1,5 +1,4 @@
 import React from 'react';
-// import './card.css';
 
 function TableBody(props) {
     return (

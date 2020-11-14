@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import Table from '../src/components/table/table';
 import Buttons from '../src/components/buttons/buttons';
-import Modal from '../src/components/modal/modal';
 import API from "./utils/Api";
 import './App.css';
 
@@ -34,7 +33,6 @@ class EmployeeResults extends Component {
           </p>
           <Buttons />
         </header>
-        <Modal />
         <div className="test">
           <section className="TableSection">
             <Table results={this.state.results} />
