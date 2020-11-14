@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TableBody from '../src/components/table/tablebody';
 import API from "./utils/Api";
 import compareNames from './utils/compareNames';
+import compareDOB from './utils/compareDOB';
 import NameFilterInput from './utils/nameFilterInput';
 import './App.css';
 
@@ -57,6 +58,16 @@ class EmployeeResults extends Component {
         sortDirection: -1 * this.state.sortDirection
       });
   }
+  
+  toggleSortDirectionDate = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const filteredEmployeesCopy = this.state.results;
+      filteredEmployeesCopy.sort(compareDOB(this.state.sortDirection));
+      this.setState({
+        sortDirection: -1 * this.state.sortDirection
+      });
+  }
 
   render() {
     return (
@@ -75,7 +86,7 @@ class EmployeeResults extends Component {
         </header>
         <div className="test">
           <section className="TableSection">
-            <TableBody results={this.state.results} toggleSortDirection={this.toggleSortDirection}/>
+            <TableBody results={this.state.results} toggleSortDirectionDate={this.toggleSortDirectionDate} toggleSortDirection={this.toggleSortDirection}/>
           </section>
         </div>
       </div>

@@ -8,9 +8,9 @@ function TableHead(props) {
             <tr>
                 <th>Photo</th>
                 <th><NameSortLink toggleSortDirection={props.toggleSortDirection} /></th>
-                <th><a href="#">Phone</a></th>
-                <th><a href="#">Email</a></th>
-                <th><DOBSortLink toggleSortDirection={props.toggleSortDirection} /></th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th><DOBSortLink toggleSortDirectionDate={props.toggleSortDirectionDate} /></th>
             </tr>
         </thead>
     );
