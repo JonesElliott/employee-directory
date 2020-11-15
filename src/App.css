@@ -42,8 +42,6 @@ body {
   }
 }
 
-.test {
-  margin: auto;
-  width: 50%;
-  /* justify-items: center; */
+.table-container {
+  margin-left: 20vw;
 }

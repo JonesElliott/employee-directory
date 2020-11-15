@@ -84,7 +84,7 @@ class EmployeeResults extends Component {
             onFilterChange={this.onFilterChange}
           />
         </header>
-        <div className="test">
+        <div className="table-container">
           <section className="TableSection">
             <TableBody results={this.state.results} toggleSortDirectionDate={this.toggleSortDirectionDate} toggleSortDirection={this.toggleSortDirection}/>
           </section>
