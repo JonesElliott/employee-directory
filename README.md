@@ -1,4 +1,4 @@
-# Fitness Tracker
+# Employee Directory
 
 [Deployed Site](https://employeedirectoryreactjs.herokuapp.com/)
   
